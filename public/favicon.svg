@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE042"/>
+      <stop offset="100%" stop-color="#FFD429"/>
+    </linearGradient>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E1E1E"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#FFD429" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="128" fill="url(#darkGrad)"/>
+  <rect width="496" height="496" x="8" y="8" rx="120" fill="none" stroke="#FFD429" stroke-width="6" stroke-opacity="0.25"/>
+
+  <!-- Glowing Kiosco Icon: Fast burger/sandwich with speed lightning -->
+  <g transform="translate(64, 48)">
+    <!-- Top bread bun -->
+    <path d="M64 160 C 64 80, 320 80, 320 160 Z" fill="url(#yellowGrad)" filter="url(#glow)"/>
+    <!-- Sesame seeds -->
+    <ellipse cx="140" cy="120" rx="8" ry="4" fill="#111111" transform="rotate(-15 140 120)"/>
+    <ellipse cx="190" cy="105" rx="8" ry="4" fill="#111111"/>
+    <ellipse cx="244" cy="120" rx="8" ry="4" fill="#111111" transform="rotate(15 244 120)"/>
+    
+    <!-- Cheese slice with melting corners -->
+    <polygon points="50,180 334,180 300,215 84,215" fill="#FFEAA7"/>
+
+    <!-- Burger/Filling layer -->
+    <rect x="58" y="195" width="268" height="28" rx="14" fill="#8B4513"/>
+
+    <!-- Bottom bread bun -->
+    <path d="M64 235 L 320 235 C 320 270, 64 270, 64 235 Z" fill="url(#yellowGrad)"/>
+
+    <!-- Fast Lightning Bolt overlay (Speed / "Sin Filas") -->
+    <g transform="translate(240, 110)">
+      <polygon points="45,-15 10,65 38,65 15,135 75,45 42,45" fill="#FFFFFF" stroke="#111111" stroke-width="4" filter="url(#glow)"/>
+    </g>
+  </g>
+
+  <!-- Brand text badge: KIOSCO 10 -->
+  <g transform="translate(256, 380)" text-anchor="middle">
+    <text font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="900" fill="#FFFFFF" letter-spacing="4">
+      KIOSCO<tspan fill="#FFD429">10</tspan>
+    </text>
+    <text y="42" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="600" fill="#FFD429" letter-spacing="2">
+      TU RECREO, SIN FILAS
+    </text>
+  </g>
+</svg>
+

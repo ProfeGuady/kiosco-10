@@ -1,0 +1,113 @@
+/* Adaptaciones Responsivas: Celulares, Tablets y Computadoras */
+
+@media (max-width: 768px) {
+  /* Cabecera Móvil */
+  .navbar-content {
+    gap: 0.5rem;
+  }
+
+  .nav-search-bar {
+    max-width: 200px;
+  }
+
+  .desktop-only-link {
+    display: none !important;
+  }
+
+  .demo-role-pill span.demo-label-full {
+    display: none;
+  }
+
+  /* Hero */
+  .hero-banner {
+    padding: 1.5rem 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  /* Grilla de productos */
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .product-img-wrapper {
+    height: 130px;
+  }
+
+  .product-card-body {
+    padding: 0.85rem;
+  }
+
+  .product-card-title {
+    font-size: 0.95rem;
+  }
+
+  .product-card-desc {
+    display: none; /* Simplificado en mobile para ahorrar espacio vertical */
+  }
+
+  .product-price {
+    font-size: 1.1rem;
+  }
+
+  .btn-add-cart {
+    padding: 0.4rem 0.65rem;
+    font-size: 0.75rem;
+  }
+
+  /* Barra de Navegación Inferior Móvil */
+  .bottom-nav {
+    display: block;
+  }
+
+  /* Padding inferior para no tapar contenido con el bottom nav */
+  .main-container {
+    padding-bottom: 5rem;
+  }
+
+  /* Carrito Móvil */
+  .cart-drawer {
+    max-width: 100%;
+  }
+
+  /* Métricas del admin en móviles */
+  .admin-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-actions-group {
+    width: 100%;
+  }
+
+  .admin-actions-group button {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-search-bar {
+    display: none; /* Se oculta o se abre en modal en pantallas muy pequeñas */
+  }
+
+  .mobile-search-toggle {
+    display: flex;
+  }
+
+  .admin-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-badges-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

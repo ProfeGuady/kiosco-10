@@ -1,0 +1,7 @@
+/* Kiosco10 — Hoja de estilos principal */
+@import './styles/variables.css';
+@import './styles/base.css';
+@import './styles/components.css';
+@import './styles/admin.css';
+@import './styles/responsive.css';
+

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <rect width="192" height="192" rx="40" fill="#111111"/>
+  <rect width="184" height="184" x="4" y="4" rx="36" fill="none" stroke="#FFD429" stroke-width="3" stroke-opacity="0.3"/>
+  <g transform="translate(16, 8) scale(0.38)">
+    <path d="M64 160 C 64 80, 320 80, 320 160 Z" fill="#FFD429"/>
+    <polygon points="50,180 334,180 300,215 84,215" fill="#FFEAA7"/>
+    <rect x="58" y="195" width="268" height="28" rx="14" fill="#8B4513"/>
+    <path d="M64 235 L 320 235 C 320 270, 64 270, 64 235 Z" fill="#FFD429"/>
+    <polygon points="285,95 250,175 278,175 255,245 315,155 282,155" fill="#FFFFFF" stroke="#111111" stroke-width="4"/>
+  </g>
+  <text x="96" y="146" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="900" fill="#FFFFFF" letter-spacing="1">
+    KIOSCO<tspan fill="#FFD429">10</tspan>
+  </text>
+  <text x="96" y="166" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#FFD429" letter-spacing="1">
+    SIN FILAS
+  </text>
+</svg>
+

@@ -1,0 +1,44 @@
+{
+  "name": "Kiosco10 — Tu recreo, sin filas",
+  "short_name": "Kiosco10",
+  "description": "Aplicación web escolar para pedir comida antes del recreo y retirar por la fila rápida.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["food", "education", "shopping"],
+  "shortcuts": [
+    {
+      "name": "Menú del Kiosco",
+      "url": "/#menu",
+      "description": "Ver sándwiches, comidas, dulces y bebidas"
+    },
+    {
+      "name": "Mis Pedidos",
+      "url": "/#history",
+      "description": "Consultar estado de tus pedidos"
+    }
+  ]
+}
+
