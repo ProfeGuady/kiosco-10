@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <title>Kiosco10 — Tu recreo, sin filas</title>
+  
+  <meta name="description" content="Aplicación web escolar para realizar pedidos anticipados en el buffet escolar y retirar por la fila rápida." />
+  <meta name="theme-color" content="#111111" />
+  
+  <!-- Iconos y Manifest PWA -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Kiosco10" />
+
+  <!-- Tipografía Google Fonts Plus Jakarta Sans con fallback nativo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="app">
+    <!-- Banner de estado offline -->
+    <div id="offline-banner-root"></div>
+
+    <!-- Barra de navegación y cabecera -->
+    <header id="navbar-root"></header>
+
+    <!-- Contenido principal dinámico -->
+    <main id="main-content-root" role="main"></main>
+
+    <!-- Carrito lateral Drawer -->
+    <div id="cart-root"></div>
+
+    <!-- Modales dinámicos -->
+    <div id="auth-modal-root"></div>
+    <div id="config-modal-root"></div>
+
+    <!-- Contenedor de notificaciones flotantes -->
+    <div id="toast-container" aria-live="polite"></div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
+
